@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
   return res.send('Received a POST HTTP method');
 });
-app.put('/user/:userId', (req, res) => {
+app.post('/user/:userId', (req, res) => {
   return res.send(
     `PUT HTTP method on user/${req.params.userId} resource`,
   );
