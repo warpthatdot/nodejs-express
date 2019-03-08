@@ -12,7 +12,7 @@ app.post('/', (req, res) => {
 app.post('/users', (req, res) => {
   return res.send('POST HTTP method on user resource');
 });
-app.post('/users/:userId', (req, res) => {
+app.post('/:userId', (req, res) => {
   return res.send(
     `PUT HTTP method on user/${req.params.userId} resource`,
   );
